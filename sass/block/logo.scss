@@ -1,0 +1,22 @@
+.logo {
+  max-width: 140px;
+  margin-right: auto;
+  img {
+    display: block;
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .logo {
+    max-width: 100%;
+    margin-right: auto;
+  }
+}
+@media ($desktop-width) {
+  .logo {
+    max-width: 100%;
+    margin-right: 25px;
+  }
+}

@@ -12,9 +12,10 @@
 
 /* ------------------------------------------------ */
 
-@import "global/fonts.scss";
-
-/* ------------------------------------------------ */
-
-@import "block/исходник.scss";
-
+@import "block/header.scss";
+@import "block/logo.scss";
+@import "block/promo.scss";
+@import "block/btn.scss";
+@import "block/done.scss";
+@import "block/footer.scss";
+@import "block/specialty.scss";

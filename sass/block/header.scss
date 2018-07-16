@@ -1,0 +1,89 @@
+.header {
+  background-color: #090909;
+  &__wrapper {
+    @include container;
+    background-color: #fcd846;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__title {
+    display: none;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #090909;
+      text-align: right;
+      margin-bottom: 0px;
+      &:hover {
+        color: #fff;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+  .header {
+    min-height: 85px;
+    &__wrapper {
+      padding: 0 !important;
+    }
+    &__title {
+      display: block;
+      font-size: 14px;
+      margin: 0;
+      text-align: center;
+      margin-right: auto;
+      padding-top: 32px;
+      font-weight: 400;
+    }
+    &__contacts {
+      padding-top: 10px;
+      padding-right: 15px;
+      padding-left: 10px;
+      background-color: #fbcd14;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media ($desktop-width) {
+  .header {
+    min-height: 85px;
+    &__wrapper {
+      padding-top: 0 !important;
+    }
+    &__contacts {
+      min-width: 307px;
+      position: relative;
+      padding-right: 25px;
+      a {
+        font-size: 20px;
+        line-height: 24px;
+        &:last-child {
+          font-size: 14px;
+          &::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-image: url('/img/telephone.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 35px;
+            top: 12px;
+          }
+        }
+      }
+    }
+  }
+}

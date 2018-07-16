@@ -1,5 +1,5 @@
 # laptraid
 
-Market (mediashark)
+Landing official service center (mediashark)
 
-<p>Магазин электроники</p>
+<p>ОФИЦИАЛЬНЫЙ СЕРВИСНЫЙ ЦЕНТР HIAB, LOGLIFT, JONSERED, MULTILIFT, MOFFETT, ZEPRO, DHOLLANDIA</p>
