@@ -1,0 +1,40 @@
+.free {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &__wrapper {
+    @include container;
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #111111;
+    br {
+      display: none;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+@media ($mobile-width) {
+
+}
+@media ($tablet-width) {
+
+}
+@media ($desktop-width) {
+  .free {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+      br {
+        display: block;
+      }
+    }
+  }
+}

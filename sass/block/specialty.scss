@@ -1,5 +1,7 @@
 .specialty {
   background: linear-gradient(to right,#FCE06B ,#FBCD14 100%);
+  padding-top: 30px;
+  padding-bottom: 30px;
   &__wrapper {
     @include container;
     display: flex;
@@ -38,7 +40,7 @@
       height: 1px;
       background-color: #fff;
       position: absolute;
-      bottom: -17px;
+      bottom: -25px;
       left: 50%;
       margin-left: -60px;
     }
@@ -48,9 +50,10 @@
     }
   }
   &__title {
-    padding-top: 35px;
+    padding-top: 43px;
     text-align: center;
     margin: 0;
+    line-height: 19px;
     span {
       font-weight: bold;
     }
@@ -64,6 +67,8 @@
 }
 @media ($desktop-width) {
   .specialty {
+    padding-top: 0px;
+    padding-bottom: 0px;
     &__wrapper {
       flex-direction: row;
       max-width: 100%;

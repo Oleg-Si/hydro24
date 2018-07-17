@@ -3,6 +3,7 @@
   &__wrapper {
     @include container;
     padding: 0 !important;
+    padding-left: 20px !important;
   }
   .logo {
     margin-right: 0;
@@ -16,5 +17,9 @@
 
 }
 @media ($desktop-width) {
-
+  .footer {
+    &__wrapper {
+      padding: 0 !important;
+    }
+  }
 }
