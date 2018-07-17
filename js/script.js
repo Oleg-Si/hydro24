@@ -102,11 +102,14 @@ for (var i = 0; i < arrowPrev.length; i++) {
 
 var popup = document.querySelector('.popup');
 var popupReview = document.querySelector('.popup__review');
+var popupCertificate = document.querySelector('.popup__certificate');
 var openPopup = document.querySelectorAll('.openPopup');
 var openPopupReview = document.querySelector('.openPopupReview');
+var openPopupCertificate = document.querySelector('.openPopupCertificate');
 var overlay = document.querySelector('.overlay');
 var closePopup = document.querySelector('.closePopup');
 var closePopupReview = document.querySelector('.closePopupReview');
+var closePopupCertificate = document.querySelector('.closePopupCertificate');
 
 for (var i = 0; i < openPopup.length; i++) {
   openPopup[i].addEventListener('click', function (evt) {
@@ -120,6 +123,11 @@ openPopupReview.addEventListener('click', function (evt) {
   overlay.classList.add('overlay--open');
   popupReview.classList.add('popup__review--open');
 });
+openPopupCertificate.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  overlay.classList.add('overlay--open');
+  popupCertificate.classList.add('popup__certificate--open');
+});
 closePopup.addEventListener('click', function () {
   overlay.classList.remove('overlay--open');
   popup.classList.remove('popup--open');
@@ -128,10 +136,15 @@ closePopupReview.addEventListener('click', function () {
   overlay.classList.remove('overlay--open');
   popupReview.classList.remove('popup__review--open');
 });
+closePopupCertificate.addEventListener('click', function () {
+  overlay.classList.remove('overlay--open');
+  popupCertificate.classList.remove('popup__certificate--open');
+});
 overlay.addEventListener('click', function () {
   overlay.classList.remove('overlay--open');
   popup.classList.remove('popup--open');
   popupReview.classList.remove('popup__review--open');
+  popupCertificate.classList.remove('popup__certificate--open');
 });
 
 /* ---------------------phone-mask------------------------------ */
