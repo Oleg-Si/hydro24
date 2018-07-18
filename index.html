@@ -443,10 +443,10 @@
             <li class="form__item"><i class="fas fa-check"></i>&nbsp; 100+ положительных отзывов о нашей работе</li>
             <li class="form__item"><i class="fas fa-check"></i>&nbsp; Оперативность, качество, доступность</li>
           </ul>
-          <form action="#" method="post">
+          <form action="mail.php" method="post">
             <div class="form__inner">
-              <input type="text" placeholder="Введите имя">
-              <input id="phone" type="text" placeholder="Введите номер телефона" required>
+              <input id="name" name="name" type="text" placeholder="Введите имя">
+              <input id="phone" name="phone" type="text" placeholder="Введите номер телефона" required>
             </div>
             <input type="submit" value="Оставить заявку">
           </form>
@@ -498,9 +498,9 @@
       <div class="closePopup"><i class="fas fa-times"></i></div>
       <p class="popup__title">УЗНАЙТЕ СТОИМОСТЬ РЕМОНТА ИЛИ ТО<br>
         <span>ВСЕГО ЗА 10 МИНУТ</span></p>
-      <form action="#" method="post">
-        <input type="text" placeholder="Введите имя">
-        <input id="phone2" type="text" placeholder="Введите номер телефона" required>
+      <form action="mail.php" method="post">
+        <input name="name" type="text" placeholder="Введите имя">
+        <input name="phone" id="phone2" type="text" placeholder="Введите номер телефона" required>
         <input type="submit" value="Отправить">
       </form>
     </div>

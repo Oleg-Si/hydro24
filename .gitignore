@@ -7,6 +7,8 @@ Thumbs.db
 *.log
 *.psd
 *.ai
+*.rar
+*.zip
 *.pdf
 yarn.lock
 npm-debug.log*
